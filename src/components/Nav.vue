@@ -25,6 +25,15 @@ const loggingOut = () => {
               Home
             </li>
           </router-link>
+
+          <router-link :to="{ name: 'Bows' }">
+            <li
+              class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
+            >
+              Bows
+            </li>
+          </router-link>
+
           <router-link :to="{ name: 'About' }">
             <li
               class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
