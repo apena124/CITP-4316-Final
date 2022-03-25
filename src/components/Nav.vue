@@ -15,7 +15,7 @@ const loggingOut = () => {
 <template>
   <div class="text-yellow-100 bg-yellow-400">
     <div class="container flex items-center justify-between mx-auto">
-      <img class="h-40 rounded-lg w-30" src="../assets/logo.PNG" alt="Logo BG"/>
+      <img class="h-40 rounded-lg w-30" src="../assets/logo.jpg" alt="Logo BG"/>
       <nav>
         <ul class="flex space-x-4">
           <router-link to="/">
