@@ -10,7 +10,7 @@ const { isAuthenticated, user } = useAuth();
     <h2 v-if="!isAuthenticated" class="text-6xl tracking-tighter font-extralight">
       Welcome To Quiver Point
     </h2>
-    <div class="flex flex-col items-center justify-center space-y-12 bg-gray-200 min-h-screen-nonav">
+    <div class="grid items-center justify-center grid-cols-2 space-y-12 bg-gray-200 min-h-screen-nonav">
     <p>
             Since 1983, QuiverPoint has been the leader in this niche market. Starting from back bedroom of a small home in Edinburg Texas,
             it has grown to a 10,000 sq. ft. warehosue in the rural town. Many companies have come and gone over the years, but QuiverPoint
@@ -25,4 +25,30 @@ const { isAuthenticated, user } = useAuth();
         <img class="h-64" src="../assets/home2.jpg" alt="Hello BG" />
       </div>
   </div>
+  <div class="text-yellow-100 bg-yellow-400">
+     <div class="container flex items-center justify-between mx-auto">
+        
+        <nav>
+        <ul class="flex space-x-4">
+        
+        <router-link :to="{ name: 'About' }">
+            <li
+              class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
+            >
+              About
+            </li>
+          </router-link>
+
+          <router-link :to="{ name: 'Contact' }">
+            <li
+              class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
+            >
+              Contact
+            </li>
+          </router-link>
+          </ul>
+          </nav>
+     </div>
+     <h5 class="text-center">2022 © QuiverPoint supply, Inc. All Rights Reserved.</h5>
+   </div>
 </template>

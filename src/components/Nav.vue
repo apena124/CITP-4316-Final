@@ -26,29 +26,28 @@ const loggingOut = () => {
             </li>
           </router-link>
 
-          <router-link :to="{ name: 'Bows' }">
+          <router-link :to="{ name: 'Traditional' }">
             <li
               class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
             >
-              Bows
+              Traditional Bows
             </li>
           </router-link>
 
-          <router-link :to="{ name: 'About' }">
+          <router-link :to="{ name: 'Modern' }">
             <li
               class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
             >
-              About
+              Modern Bows
             </li>
           </router-link>
 
-          <router-link :to="{ name: 'Contact' }">
-            <li
-              class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
-            >
-              Contact
+          <router-link :to="{name: 'Cart' }">
+            <li class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500">
+              MY Cart
             </li>
           </router-link>
+         
 
           <router-link
             v-if="!isAuthenticated"
