@@ -7,6 +7,54 @@
     <h2 class="text-6xl tracking-tighter font-extralight">Modern Bows</h2>
     <div class="grid items-center justify-center grid-cols-2 bg-gray-200 rounded-lg min-h-sereen-nonav">
       
+        <ul class="">
+        <li class="">
+          <div>
+            <h2>Compound Bows</h2>
+            <img src="../assets/modern1.jpg" class="h-20"/>
+            <h3 class="text-xl font-semibold tracking-tighter">BlackOut Intrigue XS Compound Bow</h3>
+            <p>$349.99</p>
+            <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
+          </div>
+
+          <div>
+            <img src="../assets/modern2.jpg" class="h-20"/>
+            <h3 class="text-xl font-semibold tracking-tighter">BlackOut NV-32 Compound Bow</h3>
+            <p>$799.99</p>
+            <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
+          </div>
+
+          <div>
+            <img src="../assets/modern3.jpg" class="h-20"/>
+            <h3 class="text-xl font-semibold tracking-tighter">PSE Archery Stinger ATK RTS Compund Bow</h3>
+            <p>$499.99</p>
+            <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
+          </div>
+
+          <h2>Olympic recurve bows</h2>
+          <div>
+            <img src="../assets/modern4.jpg" class="h-20"/>
+            <h3 class="text-xl font-semibold tracking-tighter">Gillo GT 25" formula Recurve Riser</h3>
+            <p>$699.99</p>
+            <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
+          </div>
+
+          <div>
+            <img src="../assets/modern5.jpg" class="h-20"/>
+            <h3 class="text-xl font-semibold tracking-tighter">Hoyt Formula Xi 25" Recurve Riser</h3>
+            <p>$829.99</p>
+            <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
+          </div>
+
+          <div>
+            <img src="../assets/modern6.jpg" class="h-20"/>
+            <h3 class="text-xl font-semibold tracking-tighter">Hoyt XAKT Recurve Bow</h3>
+            <p>$695.99</p>
+            <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
+          </div>
+        </li>
+      </ul>
+
       </div>
   </div>
   <div class="text-yellow-100 bg-yellow-400">

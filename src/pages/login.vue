@@ -2,6 +2,9 @@
 import { useRouter } from "vue-router";
 import { useForm, useField } from "vee-validate";
 import * as yup from "yup";
+import useAuth from "../composable/useAuth";
+import useError from "../composable/useError";
+import { useTimeout, promiseTimeout } from "@vueuse/core";
 const schema = yup.object({
   username: yup.string().required().email().label("Email"),
   password: yup.string().required().min(8).label("Password"),
@@ -11,8 +14,7 @@ useForm({
 });
 const { value: username, errorMessage: emailError } = useField("username");
 const { value: password, errorMessage: passwordError } = useField("password");
-import useAuth from "../composable/useAuth";
-import useError from "../composable/useError";
+
 const { isAuthenticated, login, signup, googleLogin } = useAuth();
 const router = useRouter();
 const logginIn = async () => {
@@ -36,7 +38,7 @@ const goToHome = () => {
   }
 };
 const { error, setError } = useError();
-import { useTimeout, promiseTimeout } from "@vueuse/core";
+
 const { ready, start } = useTimeout(3000, { controls: true });
 </script>
 
@@ -101,4 +103,32 @@ const { ready, start } = useTimeout(3000, { controls: true });
       {{ error }}
     </div>
   </div>
+
+
+  <div class="text-yellow-100 bg-yellow-400">
+     <div class="container flex items-center justify-between mx-auto">
+        
+        <nav>
+        <ul class="flex space-x-4">
+        
+        <router-link :to="{ name: 'About' }">
+            <li
+              class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
+            >
+              About
+            </li>
+          </router-link>
+
+          <router-link :to="{ name: 'Contact' }">
+            <li
+              class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500"
+            >
+              Contact
+            </li>
+          </router-link>
+          </ul>
+          </nav>
+     </div>
+     <h5 class="text-center">2022 © QuiverPoint supply, Inc. All Rights Reserved.</h5>
+   </div>
 </template>

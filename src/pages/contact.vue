@@ -6,14 +6,14 @@
     <div class="grid items-center justify-center grid-cols-2 bg-gray-200 rounded-lg min-h-sereen-nonav">
       
       <h3>Order Questions</h3>
-      <p>
+      <p class="p-4">
         If you need help or have any other question concerning your order, 
         please email us or call us and we will
         do what we can to help.
         </p>
 
       <h3>Address/Correspondence</h3>
-        <ul>
+        <ul class="p-4">
           <li>P.O Box 517</li>
           <li>Pharr, TX 78577 US</li>
           <li>Phone: 1-956-587-9501</li>
@@ -22,7 +22,7 @@
         </ul>
         
       <h3>Hours of Operation</h3>
-      <ul>
+      <ul class="p-4">
         <li>Sunday: Closed</li>
         <li>Monday: 8:00 AM - 6:00 PM</li>
         <li>Tuesday: 8:00 AM - 6:00 PM</li>
