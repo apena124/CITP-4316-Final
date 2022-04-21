@@ -42,13 +42,6 @@ const loggingOut = () => {
             </li>
           </router-link>
 
-          <router-link :to="{name: 'Cart' }">
-            <li class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500">
-              MY Cart
-            </li>
-          </router-link>
-         
-
           <router-link
             v-if="!isAuthenticated"
             :to="{ path: '/login', name: 'Login' }"
@@ -59,6 +52,13 @@ const loggingOut = () => {
               Login
             </li>
           </router-link>
+
+          <div v-else class="flex">
+            <router-link :to="{name: 'My Cart'}">
+              <li class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500">
+                My Cart
+              </li>
+            </router-link>
             
             <button @click="loggingOut">
               <li
@@ -67,6 +67,7 @@ const loggingOut = () => {
                 Logout
               </li>
             </button>
+            </div>
         </ul>
       </nav>
     </div>

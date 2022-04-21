@@ -33,6 +33,13 @@ const routes = [
     path: "/cart",
     name: "Cart",
     component: Cart,
+    beforeEnter: (to, from, next) => {
+      console.log(isAuthenticated);
+      if (!isAuthenticated.value) {
+        next("/login");
+      }
+      next();
+    },
   },
   {
     path: "/about",
@@ -48,6 +55,19 @@ const routes = [
     path: "/login",
     name: "Login",
     component: Login,
+  },
+
+  {
+    path: "/cart",
+    name: "My Cart",
+    component: Cart,
+    beforeEnter: (to, from, next) => {
+      console.log(isAuthenticated);
+      if (!isAuthenticated.value) {
+        next("/login");
+      }
+      next();
+    },
   },
 
   {

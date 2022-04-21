@@ -10,6 +10,9 @@ const { isAuthenticated, user } = useAuth();
     <h2 v-if="!isAuthenticated" class="text-6xl tracking-tighter font-extralight">
       Welcome To Quiver Point
     </h2>
+    <h2 v-else class="text-4xl tracking-tighter font-extralight">
+      Welcome To Quiver Point {{user}}
+    </h2>
     <div class="grid items-center justify-center grid-cols-2 space-y-12 bg-gray-200 min-h-screen-nonav">
     <p>
             Since 1983, QuiverPoint has been the leader in this niche market. Starting from back bedroom of a small home in Edinburg Texas,

@@ -1,5 +1,5 @@
 <script setup>
-
+import useAuth from '../composable/useAuth'
 </script>
 
 <template>
@@ -9,6 +9,7 @@
       
       </div>
   </div>
+
   <div class="text-yellow-100 bg-yellow-400">
      <div class="container flex items-center justify-between mx-auto">
         
