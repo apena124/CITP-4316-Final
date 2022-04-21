@@ -29,23 +29,13 @@ const routes = [
     name: "Modern",
     component: Modern,
   },
-  {
-    path: "/cart",
-    name: "Cart",
-    component: Cart,
-    beforeEnter: (to, from, next) => {
-      console.log(isAuthenticated);
-      if (!isAuthenticated.value) {
-        next("/login");
-      }
-      next();
-    },
-  },
+
   {
     path: "/about",
     name: "About",
     component: About,
   },
+
   {
     path: "/contact",
     name: "Contact",
