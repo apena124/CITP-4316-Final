@@ -49,6 +49,10 @@ const { isAuthenticated, user } = useAuth();
               Contact
             </li>
           </router-link>
+
+          <router-link :to="{name: 'Chat' }">
+            <li class="px-4 py-8 hover:cursor-pointer hover:bg-yellow-300 hover:text-yellow-500">Chat With Us</li>
+          </router-link>
           </ul>
           </nav>
      </div>

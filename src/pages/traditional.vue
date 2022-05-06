@@ -5,26 +5,26 @@
 <template>
   <div class="flex flex-col items-center justify-center sapce-y-12 min-h-screen-nonav">
     <h2 class="text-6xl tracking-tighter font-extralight">Traditional Bows</h2>
-    <div class="grid items-center justify-center grid-cols-2 bg-gray-200 rounded-lg min-h-sereen-nonav">
+    <div class="grid items-center justify-center bg-gray-200 rounded-lg grid-row-2 min-h-sereen-nonav">
       
-      <ul class="">
-        <li class="">
-          <div>
-            <h2>Longbow's</h2>
+      <ul>
+        <li>
+           <h2>Longbow's</h2>
+          <div class="grid items-center justify-center grid-cols-4">
             <img src="../assets/traditional1.jpg" class="h-20"/>
-            <h3 class="text-xl font-semibold tracking-tighter">Old Mountain Mesa Longbow</h3>
+            <h3 class="text-xl font-semibold tracking-tighter">Mountain Mesa Longbow</h3>
             <p>$299.99</p>
             <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
           </div>
 
-          <div>
+          <div class="grid items-center justify-center grid-cols-4">
             <img src="../assets/tradittonal5.jpg" class="h-20"/>
             <h3 class="text-xl font-semibold tracking-tighter">Bear 64" AuSable Longbow</h3>
             <p>$599.99</p>
             <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
           </div>
 
-          <div>
+          <div class="grid items-center justify-center grid-cols-4">
             <img src="../assets/traditional6.jpg" class="h-20"/>
             <h3 class="text-xl font-semibold tracking-tighter">Prologue Wood Longbow</h3>
             <p>$229.99</p>
@@ -32,21 +32,21 @@
           </div>
 
           <h2>Recurve Bows</h2>
-          <div>
+          <div class="grid items-center justify-center grid-cols-4">
             <img src="../assets/traditional4.jpg" class="h-20"/>
             <h3 class="text-xl font-semibold tracking-tighter">Carin 62" Takedown Recurve</h3>
             <p>$159.99</p>
             <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
           </div>
 
-          <div>
+          <div class="grid items-center justify-center grid-cols-4">
             <img src="../assets/traditional3.jpg" class="h-20"/>
             <h3 class="text-xl font-semibold tracking-tighter">Bear Super Mag 48" Recurve</h3>
             <p>$399.99</p>
             <button type="submit" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">add to cart</button>
           </div>
 
-          <div>
+          <div class="grid items-center justify-center grid-cols-4">
             <img src="../assets/traditional2.jpg" class="h-20"/>
             <h3 class="text-xl font-semibold tracking-tighter">Fire Stick 50" Recurve Bow</h3>
             <p>$529.99</p>

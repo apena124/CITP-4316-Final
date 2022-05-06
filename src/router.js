@@ -6,6 +6,7 @@ import Traditional from "./pages/traditional.vue";
 import Modern from "./pages/modern.vue";
 import Cart from "./pages/cart.vue";
 import About from "./pages/about.vue";
+import Chat from "./pages/chat.vue";
 import Contact from "./pages/contact.vue";
 import Login from "./pages/login.vue";
 import NotFound from "./pages/404.vue";
@@ -34,6 +35,12 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
+  },
+
+  {
+    path: "/chat",
+    name: "Chat",
+    component: Chat,
   },
 
   {
