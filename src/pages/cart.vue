@@ -2,11 +2,46 @@
 import useAuth from '../composable/useAuth'
 </script>
 
+<script>
+export default {
+  name: "Cart",
+  data() {
+    return {
+      cart: [],
+    };
+  },
+  methods: {
+    removeFromCart(itemId) {
+      const cartItems = JSON.parse(localStorage.getItem("cart"));
+      const index = cartItems.findIndex(({ id }) => id === itemId);
+      cartItems.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cartItems));
+      this.cart = JSON.parse(localStorage.getItem("cart"));
+    },
+    getCart() {
+      if (!localStorage.getItem("cart")) {
+        localStorage.setItem("cart", JSON.stringify([]));
+      }
+      this.cart = JSON.parse(localStorage.getItem("cart"));
+    },
+  },
+  beforeMount() {
+    this.getCart();
+  },
+};
+
+</script>
+
+
 <template>
   <div class="flex flex-col items-center justify-center sapce-y-12 min-h-screen-nonav">
     <h2 class="text-6xl tracking-tighter font-extralight">My Cart</h2>
-    <div class="grid items-center justify-center grid-cols-2 bg-gray-200 rounded-lg min-h-sereen-nonav">
+    <div v-for="(c, index) of cart" :key="c.id" class="grid items-center justify-center grid-rows-2 m-3 bg-gray-300 rounded-lg min-h-sereen-nonav">
       
+      <h3>{{c.name}}</h3>
+      <p>${{c.price}}</p>
+      <button @click="removeFromCart(index)" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300 add">Remove From Cart</button>
+
       </div>
   </div>
 

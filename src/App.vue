@@ -8,3 +8,4 @@ import Nav from "./components/Nav.vue";
     <router-view />
   </div>
 </template>
+
