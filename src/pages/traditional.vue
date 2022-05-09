@@ -84,7 +84,7 @@ export default{
    <h3>{{item.name}}</h3>
    <p>${{item.price}}</p>
    <button @click="addToCart(item.id)" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300 add">add to cart</button>
-
+  <button @click="removeFromCart(item.id)" v-if="isInCart(item.id)" class="text-white bg-yellow-500 hover:cursor-pointer hover:bg-yellow-300">remove from cart</button>
    </div>
   </div>
   
